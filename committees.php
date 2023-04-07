@@ -68,11 +68,8 @@ function committees_civicrm_enable(): void {
  *
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_tabset
  */
-function committees_civicrm_tabset( $tabsetName, &$tabs, $context ) {
-	if ($tabsetName == 'civicrm/contact/view') {
-		\Civi::resources()->addScriptFile(E::LONG_NAME, 'js/committee-contact-appointment.js');
-	}
-}
+// function committees_civicrm_tabset( $tabsetName, &$tabs, $context ) {
+// }
 
 /**
  * Implements hook_civicrm_navigationMenu().
