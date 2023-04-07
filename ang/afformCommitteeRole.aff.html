@@ -1,0 +1,10 @@
+<af-form ctrl="afform">
+	<af-entity url-autofill="1" type="CommitteeRole" name="CommitteeRole" label="Committee Role" actions="{create: true, update: true}" security="RBAC" />
+	<fieldset af-fieldset="CommitteeRole" class="af-container" af-title="Committee Role">
+		<div class="af-container af-layout-cols">
+			<af-field name="name" defn="{required: true, input_attrs: {}}" />
+			<af-field name="is_active" defn="{afform_default: '1'}" />
+		</div>
+	</fieldset>
+	<button class="af-button btn btn-primary" crm-icon="fa-check" ng-click="afform.submit()">Submit</button>
+</af-form>

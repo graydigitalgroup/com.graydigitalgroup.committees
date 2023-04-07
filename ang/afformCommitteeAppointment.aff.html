@@ -1,0 +1,16 @@
+<af-form ctrl="afform">
+	<af-entity url-autofill="1" type="CommitteeAppointment" name="CommitteeAppointment" label="Committee Appointment" actions="{create: true, update: true}" security="RBAC" />
+	<fieldset af-fieldset="CommitteeAppointment" class="af-container">
+		<div class="af-container af-layout-cols">
+			<af-field name="contact_id" defn="{label: 'Contact', input_attrs: {}, required: true}" />
+			<af-field name="committee_id" defn="{label: 'Committee', input_attrs: {}, input_type: 'Select', required: true}" />
+			<af-field name="committee_role_id" defn="{label: 'Committee Role', input_attrs: {}, input_type: 'Select', required: true}" />
+		</div>
+		<div class="af-container af-layout-cols">
+			<af-field name="start_date" />
+			<af-field name="end_date" />
+			<af-field name="is_active" />
+		</div>
+	</fieldset>
+	<button class="af-button btn btn-primary" crm-icon="fa-check" ng-click="afform.submit()">Submit</button>
+</af-form>

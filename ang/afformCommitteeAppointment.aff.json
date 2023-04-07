@@ -1,0 +1,18 @@
+{
+	"contact_summary": null,
+	"create_submission": true,
+	"description": "Add/Update page for a Committee Appointments",
+	"entity_type": "CommitteeAppointment",
+	"is_dashlet": false,
+	"is_public": false,
+	"is_token": false,
+	"join_entity": null,
+	"name": "afformCommitteeAppointment",
+	"navigation": null,
+	"permission": "access CiviCRM",
+	"redirect": "civicrm/committee/appointment/dashboard",
+	"requires": [],
+	"server_route": "civicrm/committee/appointment/manage",
+	"title": "Committee Appointment",
+	"type": "form"
+}

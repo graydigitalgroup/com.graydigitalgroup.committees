@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<table>
+	<title>Committee Appointment</title>
+	<titlePlural>Committee Appointments</titlePlural>
+	<base>CRM/Committees</base>
+	<class>CommitteeAppointment</class>
+	<name>civicrm_committee_appointment</name>
+	<comment>Committee appointments for contacts.</comment>
+	<log>true</log>
+	<paths>
+		<delete>civicrm/committee/appointment/manage?reset=1&amp;action=delete&amp;id=[id]</delete>
+	</paths>
+
+	<field>
+		<name>id</name>
+		<type>int unsigned</type>
+		<required>true</required>
+		<comment>Unique CommitteeAppointment ID</comment>
+		<html>
+			<type>Number</type>
+		</html>
+	</field>
+	<primaryKey>
+		<name>id</name>
+		<autoincrement>true</autoincrement>
+	</primaryKey>
+
+	<field>
+		<name>contact_id</name>
+		<type>int unsigned</type>
+		<required>true</required>
+		<comment>FK to Contact</comment>
+		<pseudoconstant>
+			<table>civicrm_contact</table>
+			<keyColumn>id</keyColumn>
+			<labelColumn>display_name</labelColumn>
+			<condition>contact_type = "Individual"</condition>
+		</pseudoconstant>
+		<html>
+			<type>EntityRef</type>
+		</html>
+	</field>
+	<foreignKey>
+		<name>contact_id</name>
+		<table>civicrm_contact</table>
+		<key>id</key>
+		<onDelete>CASCADE</onDelete>
+	</foreignKey>
+
+	<field>
+		<name>committee_id</name>
+		<type>int unsigned</type>
+		<required>true</required>
+		<comment>FK to Committee</comment>
+		<pseudoconstant>
+			<table>civicrm_committee</table>
+			<keyColumn>id</keyColumn>
+			<labelColumn>name</labelColumn>
+			<condition>is_active = 1</condition>
+		</pseudoconstant>
+		<html>
+			<type>EntityRef</type>
+		</html>
+	</field>
+	<foreignKey>
+		<name>committee_id</name>
+		<table>civicrm_committee</table>
+		<key>id</key>
+		<onDelete>CASCADE</onDelete>
+	</foreignKey>
+
+	<field>
+		<name>committee_role_id</name>
+		<type>int unsigned</type>
+		<comment>FK to Committee Role</comment>
+		<pseudoconstant>
+			<table>civicrm_committee_role</table>
+			<keyColumn>id</keyColumn>
+			<labelColumn>name</labelColumn>
+			<condition>is_active = 1</condition>
+		</pseudoconstant>
+		<html>
+			<type>EntityRef</type>
+		</html>
+	</field>
+	<foreignKey>
+		<name>committee_role_id</name>
+		<table>civicrm_committee_role</table>
+		<key>id</key>
+		<onDelete>CASCADE</onDelete>
+	</foreignKey>
+
+	<field>
+		<name>start_date</name>
+		<title>Start Date</title>
+		<type>date</type>
+		<import>true</import>
+		<export>true</export>
+		<default>NULL</default>
+		<dataPattern>/\d{4}-?\d{2}-?\d{2}/</dataPattern>
+		<comment>Date the appointment starts.</comment>
+		<html>
+			<type>Select Date</type>
+			<formatType>activityDate</formatType>
+		</html>
+	</field>
+
+	<field>
+		<name>end_date</name>
+		<title>End Date</title>
+		<type>date</type>
+		<import>true</import>
+		<export>true</export>
+		<default>NULL</default>
+		<dataPattern>/\d{4}-?\d{2}-?\d{2}/</dataPattern>
+		<comment>Date the appointment ends.</comment>
+		<html>
+			<type>Select Date</type>
+			<formatType>activityDate</formatType>
+		</html>
+	</field>
+
+	<field>
+		<name>is_active</name>
+		<title>Appointment Is Active</title>
+		<type>boolean</type>
+		<default>1</default>
+		<comment>Is this committee appointment enabled?</comment>
+		<html>
+			<type>CheckBox</type>
+		</html>
+	</field>
+</table>

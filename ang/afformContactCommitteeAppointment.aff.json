@@ -1,0 +1,17 @@
+{
+	"contact_summary": null,
+	"create_submission": true,
+	"description": "Add/Update page for a contact's Committee Appointments",
+	"entity_type": "CommitteeAppointment",
+	"is_dashlet": false,
+	"is_public": false,
+	"is_token": false,
+	"join_entity": null,
+	"name": "afformContactCommitteeAppointment",
+	"navigation": null,
+	"permission": "access CiviCRM",
+	"requires": [],
+	"server_route": "civicrm/committee/appointment/contact/manage",
+	"title": "Contact Committee Appointment",
+	"type": "form"
+}

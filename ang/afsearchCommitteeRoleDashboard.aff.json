@@ -1,0 +1,9 @@
+{
+    "name": "afsearchCommitteeRoles",
+    "requires": [],
+    "title": "Committee Roles",
+    "permission": "access CiviCRM",
+    "type": "search",
+    "icon": "fa-list-alt",
+    "server_route": "civicrm/committee/role/dashboard"
+}

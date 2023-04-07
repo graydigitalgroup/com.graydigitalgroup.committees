@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<extension key="com.graydigitalgroup.committees" type="module">
+  <file>committees</file>
+  <name>Committee Management</name>
+  <description>Adds the ability to manage committes. You can create committees, committee roles, and then assign contacts to a committee and define the role.</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Richard Baugh</author>
+    <email>richard@graydigitalgroup.com</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/graydigitlgroup/com.graydigitalgroup.committees</url>
+    <url desc="Documentation">https://github.com/graydigitlgroup/com.graydigitalgroup.committees/README.md</url>
+    <url desc="Support">https://github.com/graydigitlgroup/com.graydigitalgroup.committees/issues</url>
+    <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2023-03-30</releaseDate>
+  <version>1.0</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>5.57</ver>
+  </compatibility>
+  <comments>This is a new module and may change significantly.</comments>
+  <classloader>
+    <psr0 prefix="CRM_" path="."/>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+  <civix>
+    <namespace>CRM/Committees</namespace>
+    <format>23.02.1</format>
+    <angularModule>crmCommittees</angularModule>
+  </civix>
+  <mixins>
+    <mixin>mgd-php@1.0.0</mixin>
+    <mixin>setting-php@1.0.0</mixin>
+    <mixin>smarty-v2@1.0.1</mixin>
+    <mixin>entity-types-php@1.0.0</mixin>
+	<mixin>afform-entity-php@1.0.0</mixin>
+  </mixins>
+  <upgrader>CRM_Committees_Upgrader</upgrader>
+</extension>

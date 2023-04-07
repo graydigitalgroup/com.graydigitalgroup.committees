@@ -1,0 +1,20 @@
+{
+	"name": "afformCommittee",
+	"requires": [],
+	"title": "Committee",
+	"description": "",
+	"is_dashlet": false,
+	"is_public": false,
+	"is_token": false,
+	"permission": "access CiviCRM",
+	"type": "form",
+	"entity_type": "Committee",
+	"join_entity": null,
+	"contact_summary": null,
+	"summary_contact_type": null,
+	"icon": "fa-users",
+	"server_route": "civicrm/committee/manage",
+	"redirect": "civicrm/committee/dashboard",
+	"create_submission": true,
+	"navigation": null
+}

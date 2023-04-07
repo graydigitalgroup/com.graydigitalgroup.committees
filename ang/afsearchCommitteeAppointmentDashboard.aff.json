@@ -1,0 +1,8 @@
+{
+	"type": "search",
+	"requires": [],
+	"title": "Committee Appointment Dashboard",
+	"description": "Dashboard listing of committee appointmentss",
+	"server_route": "civicrm/committee/appointment/dashboard",
+	"permission": "access CiviCRM"
+}

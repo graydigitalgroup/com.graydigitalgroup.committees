@@ -1,0 +1,8 @@
+{
+	"type": "search",
+	"requires": [],
+	"title": "Committee Dashboard",
+	"description": "Dashboard listing of committees",
+	"server_route": "civicrm/committee/dashboard",
+	"permission": "access CiviCRM"
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<table>
+	<title>Committee</title>
+	<titlePlural>Committees</titlePlural>
+	<base>CRM/Committees</base>
+	<class>Committee</class>
+	<name>civicrm_committee</name>
+	<labelField>name</labelField>
+	<comment>Collection of Committees.</comment>
+	<log>true</log>
+	<paths>
+		<add>civicrm/committee/manage</add>
+		<edit>civicrm/committee/manage#?Committee=[id]</edit>
+		<delete>civicrm/committee/manage?reset=1&amp;action=delete&amp;id=[id]</delete>
+	</paths>
+
+	<field>
+		<name>id</name>
+		<type>int unsigned</type>
+		<required>true</required>
+		<comment>Unique Committee ID</comment>
+		<html>
+			<type>Number</type>
+		</html>
+	</field>
+	<primaryKey>
+		<name>id</name>
+		<autoincrement>true</autoincrement>
+	</primaryKey>
+
+	<field>
+		<name>name</name>
+		<type>varchar</type>
+		<required>true</required>
+		<import>true</import>
+		<title>Committee Name</title>
+		<length>255</length>
+		<localizable>true</localizable>
+		<comment>Committee Name (e.g. Communications)</comment>
+		<html>
+			<label>Title</label>
+			<type>Text</type>
+		</html>
+	</field>
+
+	<field>
+		<name>summary</name>
+		<type>text</type>
+		<title>Committee Summary</title>
+		<html>
+			<label>Summary</label>
+			<type>TextArea</type>
+			<rows>4</rows>
+			<cols>60</cols>
+		</html>
+		<localizable>true</localizable>
+		<comment>Brief summary of the committee. Text and html allowed. Displayed on Committee pages to describe what this committee is.</comment>
+	</field>
+
+	<field>
+		<name>activities</name>
+		<type>text</type>
+		<title>Committee Activities</title>
+		<html>
+			<label>Activities</label>
+			<type>TextArea</type>
+			<rows>4</rows>
+			<cols>60</cols>
+		</html>
+		<localizable>true</localizable>
+		<comment>Activities for the committee. Text and html allowed. Displayed on Committee pages to denote the activities involved with this committee.</comment>
+	</field>
+
+	<field>
+		<name>is_active</name>
+		<title>Committee Is Active</title>
+		<type>boolean</type>
+		<default>1</default>
+		<comment>Is this committee enabled?</comment>
+		<html>
+			<type>CheckBox</type>
+		</html>
+	</field>
+
+</table>
