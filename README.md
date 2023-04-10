@@ -51,6 +51,8 @@ Once this is installed, you will have a new Menu item `Committees` listed in the
 
 There is also a new tab added to the Contact Summary page in which you can manage the appointments for a given contact or add new appointments for a contact.
 
-[Future work](./docs/future-work.md)
+[Future work](docs/future-work.md)
 
 ## Known Issues
+
+See [issues](issues)
