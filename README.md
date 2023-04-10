@@ -55,4 +55,4 @@ There is also a new tab added to the Contact Summary page in which you can manag
 
 ## Known Issues
 
-See [issues](/issues)
+See [issues](github/graydigitalgroup/com.graydigitalgroup.committees/issues)
