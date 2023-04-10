@@ -47,9 +47,10 @@ cv en committees
 
 ## Getting Started
 
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
+Once this is installed, you will have a new Menu item `Committees` listed in the CiviCRM menu. Under this menu item you can then manage the `Committees`, `Committee Roles` and `Committee Appointments`. Each page will list out the current records along with allowing you to create new records.
+
+There is also a new tab added to the Contact Summary page in which you can manage the appointments for a given contact or add new appointments for a contact.
+
+[Future work](./docs/future-work.md)
 
 ## Known Issues
-
-When editing a committee through the modal window, it isn't wanting to populate the two html fields.
-When adding a committee appointment on the contact tab, the Contact field is not populating based on the current contact record. [issue 4110](https://lab.civicrm.org/dev/core/-/issues/4110)
