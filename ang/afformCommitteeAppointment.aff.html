@@ -1,16 +1,17 @@
 <af-form ctrl="afform">
 	<af-entity url-autofill="1" type="CommitteeAppointment" name="CommitteeAppointment" label="Committee Appointment" actions="{create: true, update: true}" security="RBAC" />
-	<fieldset af-fieldset="CommitteeAppointment" class="af-container">
+	<fieldset af-fieldset="CommitteeAppointment" class="af-container" min="1" af-repeat="Add" max="3">
 		<div class="af-container af-layout-cols">
 			<af-field name="contact_id" defn="{label: 'Contact', input_attrs: {}, required: true}" />
-			<af-field name="committee_id" defn="{label: 'Committee', input_attrs: {}, input_type: 'Select', required: true}" />
-			<af-field name="committee_role_id" defn="{label: 'Committee Role', input_attrs: {}, input_type: 'Select', required: true}" />
+			<af-field name="committee_id" defn="{label: 'Committee', input_attrs: {autoOpen: true}, required: true}" />
+			<af-field name="committee_role_id" defn="{label: 'Committee Role', input_attrs: {autoOpen: true}, required: true}" />
 		</div>
 		<div class="af-container af-layout-cols">
 			<af-field name="start_date" />
 			<af-field name="end_date" />
-			<af-field name="is_active" />
+			<af-field name="is_active" defn="{afform_default: '0'}" />
 		</div>
 	</fieldset>
+	<p>&nbsp;</p>
 	<button class="af-button btn btn-primary" crm-icon="fa-check" ng-click="afform.submit()">Submit</button>
 </af-form>
