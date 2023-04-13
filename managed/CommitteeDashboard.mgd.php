@@ -86,7 +86,7 @@ return [
 									'entity' => '',
 									'action' => '',
 									'join' => '',
-									//'target' => 'crm-popup',
+									'target' => 'crm-popup',
 								],
 							],
 							'type' => 'buttons',
