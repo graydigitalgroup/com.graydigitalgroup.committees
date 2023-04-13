@@ -1,0 +1,8 @@
+{
+	"title": "Committee Appointments",
+	"permission": "edit my contact",
+	"type": "search",
+	"contact_summary": "",
+	"summary_contact_type": ["Individual"],
+	"server_route": ""
+}
