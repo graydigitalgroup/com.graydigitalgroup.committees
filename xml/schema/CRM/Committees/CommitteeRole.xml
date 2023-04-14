@@ -46,7 +46,7 @@
 		<name>is_active</name>
 		<title>Role Is Active</title>
 		<type>boolean</type>
-		<default>1</default>
+		<default>0</default>
 		<comment>Is this committee role enabled?</comment>
 		<html>
 			<type>CheckBox</type>

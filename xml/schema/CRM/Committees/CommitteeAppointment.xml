@@ -31,14 +31,10 @@
 		<type>int unsigned</type>
 		<required>true</required>
 		<comment>FK to Contact</comment>
-		<pseudoconstant>
-			<table>civicrm_contact</table>
-			<keyColumn>id</keyColumn>
-			<labelColumn>display_name</labelColumn>
-			<condition>contact_type = "Individual"</condition>
-		</pseudoconstant>
 		<html>
 			<type>EntityRef</type>
+			<label>Contact</label>
+			<filter>contact_type=Individual</filter>
 		</html>
 	</field>
 	<foreignKey>
@@ -53,12 +49,6 @@
 		<type>int unsigned</type>
 		<required>true</required>
 		<comment>FK to Committee</comment>
-		<pseudoconstant>
-			<table>civicrm_committee</table>
-			<keyColumn>id</keyColumn>
-			<labelColumn>name</labelColumn>
-			<condition>is_active = 1</condition>
-		</pseudoconstant>
 		<html>
 			<type>EntityRef</type>
 		</html>
@@ -74,14 +64,9 @@
 		<name>committee_role_id</name>
 		<type>int unsigned</type>
 		<comment>FK to Committee Role</comment>
-		<pseudoconstant>
-			<table>civicrm_committee_role</table>
-			<keyColumn>id</keyColumn>
-			<labelColumn>name</labelColumn>
-			<condition>is_active = 1</condition>
-		</pseudoconstant>
 		<html>
 			<type>EntityRef</type>
+			<filter>is_active=1</filter>
 		</html>
 	</field>
 	<foreignKey>
@@ -125,7 +110,7 @@
 		<name>is_active</name>
 		<title>Appointment Is Active</title>
 		<type>boolean</type>
-		<default>1</default>
+		<default>0</default>
 		<comment>Is this committee appointment enabled?</comment>
 		<html>
 			<type>CheckBox</type>

@@ -1,6 +1,6 @@
 <div af-fieldset="" class="contact-profile-appointment">
 	<div class="af-markup">
-		<p><a class="btn btn-primary add-appointment" target="crm-popup" ng-href="{{ crmUrl('civicrm/committee/appointment/manage#contact_id=' + options.contact_id) }}">Add Committee Appointment</a></p>
+		<p><a class="btn btn-primary add-appointment" target="crm-popup" ng-href="{{ crmUrl('civicrm/committee/appointment/add#contact_id=' + options.contact_id) }}">Add Committee Appointment</a></p>
 		<p>&nbsp;</p>
 	</div>
 	<crm-search-display-table search-name="Committee_Appointments" display-name="Contact_Committee_Appointments" filters="{contact_id: options.contact_id}"></crm-search-display-table>
