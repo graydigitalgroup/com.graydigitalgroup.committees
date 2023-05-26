@@ -20,6 +20,12 @@ class CRM_Committees_Upgrader extends CRM_Extension_Upgrader_Base {
   //   $this->executeSqlFile('sql/my_install.sql');
   // }
 
+	public function upgrade_1000() {
+		$this->ctx->log->info('Applying update 1000 - alter civicrm_committee_appointment table');
+		$this->executeSqlFile('sql/upgrade_1000.sql');
+		return TRUE;
+	}
+
   /**
    * Example: Work with entities usually not available during the install step.
    *

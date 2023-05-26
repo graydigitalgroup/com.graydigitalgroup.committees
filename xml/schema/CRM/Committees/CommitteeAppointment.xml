@@ -78,7 +78,7 @@
 
 	<field>
 		<name>start_date</name>
-		<title>Start Date</title>
+		<title>Appointment Start Date</title>
 		<type>date</type>
 		<import>true</import>
 		<export>true</export>
@@ -93,13 +93,28 @@
 
 	<field>
 		<name>end_date</name>
-		<title>End Date</title>
+		<title>Annual Appointment End Date</title>
 		<type>date</type>
 		<import>true</import>
 		<export>true</export>
 		<default>NULL</default>
 		<dataPattern>/\d{4}-?\d{2}-?\d{2}/</dataPattern>
 		<comment>Date the appointment ends.</comment>
+		<html>
+			<type>Select Date</type>
+			<formatType>activityDate</formatType>
+		</html>
+	</field>
+
+	<field>
+		<name>eligibility_end_date</name>
+		<title>Eligibility End Date</title>
+		<type>date</type>
+		<import>true</import>
+		<export>true</export>
+		<default>NULL</default>
+		<dataPattern>/\d{4}-?\d{2}-?\d{2}/</dataPattern>
+		<comment>The full term date the appointment woud run through.</comment>
 		<html>
 			<type>Select Date</type>
 			<formatType>activityDate</formatType>
