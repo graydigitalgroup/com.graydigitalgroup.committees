@@ -78,7 +78,7 @@ return [
 							'size' => 'btn-xs',
 							'links' => [
 								[
-									'path' => 'civicrm/committee/manage#?Committee=[id]',
+									'path' => 'civicrm/committee/_manage#?Committee=[id]',
 									'icon' => 'fa-external-link',
 									'text' => 'Edit',
 									'style' => 'default',

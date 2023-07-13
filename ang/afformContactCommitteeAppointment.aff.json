@@ -11,7 +11,7 @@
 	"navigation": null,
 	"permission": "access CiviCRM",
 	"requires": [],
-	"server_route": "civicrm/committee/appointment/contact/manage",
+	"server_route": "civicrm/committee/appointment/contact/_manage",
 	"title": "Contact Committee Appointment",
 	"type": "form"
 }

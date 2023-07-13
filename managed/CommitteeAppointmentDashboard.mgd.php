@@ -162,7 +162,7 @@ return [
 						'size' => 'btn-xs',
 						'links' => [
 							[
-								'path' => 'civicrm/committee/appointment/manage#?CommitteeAppointment=[id]',
+								'path' => 'civicrm/committee/appointment/_manage#?CommitteeAppointment=[id]',
 								'icon' => 'fa-external-link',
 								'text' => 'Edit',
 								'style' => 'default',
@@ -252,7 +252,7 @@ return [
 						'size' => 'btn-xs',
 						'links' => [
 							[
-								'path' => 'civicrm/committee/appointment/manage#?CommitteeAppointment=[id]',
+								'path' => 'civicrm/committee/appointment/_manage#?CommitteeAppointment=[id]',
 								'icon' => 'fa-external-link',
 								'text' => 'Edit',
 								'style' => 'default',

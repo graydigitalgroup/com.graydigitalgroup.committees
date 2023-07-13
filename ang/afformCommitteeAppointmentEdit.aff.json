@@ -12,7 +12,7 @@
 	"permission": "access CiviCRM",
 	"redirect": "civicrm/committee/appointment/dashboard",
 	"requires": [],
-	"server_route": "civicrm/committee/appointment/manage",
+	"server_route": "civicrm/committee/appointment/_manage",
 	"title": "Committee Appointment Edit",
 	"type": "form"
 }

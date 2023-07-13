@@ -83,7 +83,7 @@ return [
 					'icon' => 'fa-external-link',
 					'text' => 'Edit',
 					'style' => 'default',
-					'path' => 'civicrm/committee/role/manage#?CommitteeRole=[id]',
+					'path' => 'civicrm/committee/role/_manage#?CommitteeRole=[id]',
 					'condition' => [],
 					],
 				],
