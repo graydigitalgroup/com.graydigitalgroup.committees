@@ -9,11 +9,6 @@
 	<labelField>name</labelField>
 	<comment>Used to identify the role in which an appointment is defined for a contact.</comment>
 	<log>true</log>
-	<paths>
-		<add>civicrm/committee/role/manage</add>
-		<edit>civicrm/committee/role/manage#?CommitteeRole=[id]</edit>
-		<delete>civicrm/committee/role/manage?reset=1&amp;action=delete&amp;id=[id]</delete>
-	</paths>
 
 	<field>
 		<name>id</name>

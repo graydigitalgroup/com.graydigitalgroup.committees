@@ -74,7 +74,7 @@ CREATE TABLE `civicrm_committee_appointment` (
   `committee_role_id` int unsigned COMMENT 'FK to Committee Role',
   `start_date` date DEFAULT NULL COMMENT 'Date the appointment starts.',
   `end_date` date DEFAULT NULL COMMENT 'Date the appointment ends.',
-  `eligibility_end_date` date DEFAULT NULL COMMENT 'Date the appointment ends.',
+  `eligibility_end_date` date DEFAULT NULL COMMENT 'The full term date the appointment woud run through.',
   `is_active` tinyint DEFAULT 0 COMMENT 'Is this committee appointment enabled?',
   PRIMARY KEY (`id`),
   CONSTRAINT FK_civicrm_committee_appointment_contact_id FOREIGN KEY (`contact_id`) REFERENCES `civicrm_contact`(`id`) ON DELETE CASCADE,

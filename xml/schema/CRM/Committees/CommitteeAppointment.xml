@@ -8,9 +8,6 @@
 	<name>civicrm_committee_appointment</name>
 	<comment>Committee appointments for contacts.</comment>
 	<log>true</log>
-	<paths>
-		<delete>civicrm/committee/appointment/manage?reset=1&amp;action=delete&amp;id=[id]</delete>
-	</paths>
 
 	<field>
 		<name>id</name>

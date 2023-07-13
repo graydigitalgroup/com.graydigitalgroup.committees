@@ -9,11 +9,6 @@
 	<labelField>name</labelField>
 	<comment>Collection of Committees.</comment>
 	<log>true</log>
-	<paths>
-		<add>civicrm/committee/manage</add>
-		<edit>civicrm/committee/manage#?Committee=[id]</edit>
-		<delete>civicrm/committee/manage?reset=1&amp;action=delete&amp;id=[id]</delete>
-	</paths>
 
 	<field>
 		<name>id</name>
