@@ -39,6 +39,17 @@ class CRM_Committees_DAO_CommitteeRole extends CRM_Core_DAO {
   public static $_log = TRUE;
 
   /**
+   * Paths for accessing this entity in the UI.
+   *
+   * @var string[]
+   */
+  protected static $_paths = [
+    'add' => 'civicrm/committee/role/manage',
+    'edit' => 'civicrm/committee/role/manage#?CommitteeRole=[id]',
+    'delete' => 'civicrm/committee/role/manage?reset=1&action=delete&id=[id]',
+  ];
+
+  /**
    * Unique CommitteeRole ID
    *
    * @var int|string|null

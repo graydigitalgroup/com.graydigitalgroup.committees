@@ -32,6 +32,17 @@ class CRM_Committees_DAO_CommitteeAppointment extends CRM_Core_DAO {
   public static $_log = TRUE;
 
   /**
+   * Paths for accessing this entity in the UI.
+   *
+   * @var string[]
+   */
+  protected static $_paths = [
+    'add' => 'civicrm/committee/appointment/manage',
+    'edit' => 'civicrm/committee/appointment/manage#?CommitteeAppointment=[id]',
+    'delete' => 'civicrm/committee/appointment/manage?reset=1&action=delete&id=[id]',
+  ];
+
+  /**
    * Unique CommitteeAppointment ID
    *
    * @var int|string|null
