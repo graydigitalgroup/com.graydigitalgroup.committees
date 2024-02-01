@@ -13,7 +13,7 @@
 	"contact_summary": null,
 	"summary_contact_type": null,
 	"icon": "fa-users",
-	"server_route": "civicrm/committee/_manage",
+	"server_route": "civicrm/committee/manage",
 	"redirect": "civicrm/committee/dashboard",
 	"create_submission": true,
 	"navigation": null
