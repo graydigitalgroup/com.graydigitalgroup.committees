@@ -40,6 +40,7 @@ CREATE TABLE `civicrm_committee` (
   `name` varchar(255) NOT NULL COMMENT 'Committee Name (e.g. Communications)',
   `summary` text COMMENT 'Brief summary of the committee. Text and html allowed. Displayed on Committee pages to describe what this committee is.',
   `activities` text COMMENT 'Activities for the committee. Text and html allowed. Displayed on Committee pages to denote the activities involved with this committee.',
+  `hl_community` varchar(255) NOT NULL COMMENT 'Community name on HigherLogic.',
   `is_active` tinyint DEFAULT 0 COMMENT 'Is this committee enabled?',
   PRIMARY KEY (`id`)
 )

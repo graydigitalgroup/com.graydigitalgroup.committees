@@ -1,2 +1,3 @@
-ALTER TABLE civicrm_committee_appointment
-ADD `eligibility_end_date` date DEFAULT NULL COMMENT 'The full term date the appointment woud run through.';
+ALTER TABLE `civicrm_committee`
+ADD COLUMN `hl_community` VARCHAR(255) NULL COMMENT 'HigherLogic Community name.'
+AFTER `activities`;

@@ -15,7 +15,6 @@
 		<delete>civicrm/committee/manage?reset=1&amp;action=delete&amp;id=[id]</delete>
 	</paths>
 
-
 	<field>
 		<name>id</name>
 		<type>int unsigned</type>
@@ -71,6 +70,21 @@
 		</html>
 		<localizable>true</localizable>
 		<comment>Activities for the committee. Text and html allowed. Displayed on Committee pages to denote the activities involved with this committee.</comment>
+	</field>
+
+	<field>
+		<name>hl_community</name>
+		<type>varchar</type>
+		<required>true</required>
+		<import>true</import>
+		<title>HL Community</title>
+		<length>255</length>
+		<localizable>true</localizable>
+		<comment>Community name on HigherLogic.</comment>
+		<html>
+			<label>HL Community</label>
+			<type>Text</type>
+		</html>
 	</field>
 
 	<field>
