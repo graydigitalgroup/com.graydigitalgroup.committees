@@ -162,17 +162,6 @@ return [
 						'size' => 'btn-xs',
 						'links' => [
 							[
-								'entity' => 'CommitteeAppointment',
-								'action' => 'edit',
-								'join' => '',
-								'target' => 'crm-popup',
-								'icon' => 'fa-external-link',
-								'text' => 'Edit',
-								'style' => 'default',
-								'path' => '',
-								'condition' => [],
-							],
-							[
 								'task' => 'disable',
 								'entity' => 'CommitteeAppointment',
 								'join' => '',
@@ -203,6 +192,17 @@ return [
 									'=',
 									FALSE,
 								],
+							],
+							[
+								'entity' => 'CommitteeAppointment',
+								'action' => 'edit',
+								'join' => '',
+								'target' => 'crm-popup',
+								'icon' => 'fa-external-link',
+								'text' => 'Edit',
+								'style' => 'default',
+								'path' => '',
+								'condition' => [],
 							],
 							[
 								'task' => 'delete',
@@ -296,17 +296,6 @@ return [
 						'size' => 'btn-xs',
 						'links' => [
 							[
-								'entity' => 'CommitteeAppointment',
-								'action' => 'edit',
-								'join' => '',
-								'target' => 'crm-popup',
-								'icon' => 'fa-external-link',
-								'text' => 'Edit',
-								'style' => 'default',
-								'path' => '',
-								'condition' => [],
-							],
-							[
 								'task' => 'disable',
 								'entity' => 'CommitteeAppointment',
 								'join' => '',
@@ -337,6 +326,17 @@ return [
 									'=',
 									FALSE,
 								],
+							],
+							[
+								'entity' => 'CommitteeAppointment',
+								'action' => 'edit',
+								'join' => '',
+								'target' => 'crm-popup',
+								'icon' => 'fa-external-link',
+								'text' => 'Edit',
+								'style' => 'default',
+								'path' => '',
+								'condition' => [],
 							],
 							[
 								'task' => 'delete',
