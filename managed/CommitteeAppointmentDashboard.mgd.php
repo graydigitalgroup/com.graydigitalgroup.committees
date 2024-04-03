@@ -25,6 +25,7 @@ return [
 				'end_date',
 				'eligibility_end_date',
 				'is_active',
+				'CommitteeAppointment_Contact_contact_id_01_Contact_Membership_contact_id_01.status_id:label',
 			],
 			'orderBy' => [],
 			'where' => [],
@@ -65,6 +66,15 @@ return [
 						'CommitteeAppointment_CommitteeRole_committee_role_id_01.is_active',
 						'=',
 						TRUE,
+					],
+				],
+				[
+					'Membership AS CommitteeAppointment_Contact_contact_id_01_Contact_Membership_contact_id_01',
+					'LEFT',
+					[
+						'CommitteeAppointment_Contact_contact_id_01.id',
+						'=',
+						'CommitteeAppointment_Contact_contact_id_01_Contact_Membership_contact_id_01.contact_id',
 					],
 				],
 			],
@@ -156,6 +166,13 @@ return [
 						'key' => 'is_active',
 						'dataType' => 'Boolean',
 						'label' => 'Is Active',
+						'sortable' => TRUE,
+					],
+					[
+						'type' => 'field',
+						'key' => 'CommitteeAppointment_Contact_contact_id_01_Contact_Membership_contact_id_01.status_id:label',
+						'dataType' => 'Integer',
+						'label' => ts('Membership Status'),
 						'sortable' => TRUE,
 					],
 					[
