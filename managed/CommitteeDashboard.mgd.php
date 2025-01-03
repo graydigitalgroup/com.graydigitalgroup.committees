@@ -124,7 +124,7 @@ return [
                     ],
                 ],
                 [
-                    'task' => 'edit',
+                    'task' => '',
                     'entity' => 'Committee',
                     'join' => '',
                     'target' => 'crm-popup',

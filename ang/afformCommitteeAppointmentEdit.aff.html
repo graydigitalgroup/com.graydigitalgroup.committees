@@ -2,14 +2,14 @@
 	<af-entity url-autofill="1" type="CommitteeAppointment" name="CommitteeAppointment" label="Committee Appointment" actions="{create: true, update: true}" security="RBAC" />
 	<fieldset af-fieldset="CommitteeAppointment" class="af-container">
 		<div class="af-container af-layout-cols">
-			<af-field name="contact_id" defn="{label: 'Contact', input_attrs: {}, required: true}" />
+			<af-field name="contact_id" defn="{label: 'Contact', input_attrs: {}, required: true, saved_search: 'AutoComplete_Individuals'}" />
 			<af-field name="committee_id" defn="{label: 'Committee', input_attrs: {autoOpen: true}, required: true}" />
 			<af-field name="committee_role_id" defn="{label: 'Committee Role', input_attrs: {autoOpen: true}, required: true}" />
 		</div>
 		<div class="af-container af-layout-cols">
-			<af-field name="start_date" />
-			<af-field name="end_date" />
-			<af-field name="eligibility_end_date" />
+			<af-field name="start_date" defn="{input_attrs: {time: false}}" />
+			<af-field name="end_date" defn="{input_attrs: {time: false}}" />
+			<af-field name="eligibility_end_date" defn="{input_attrs: {time: false}}" />
 			<af-field name="is_active" defn="{afform_default: '0'}" />
 		</div>
 	</fieldset>

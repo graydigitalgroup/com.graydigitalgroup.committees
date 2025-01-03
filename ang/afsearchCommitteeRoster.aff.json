@@ -1,0 +1,9 @@
+{
+	"name": "afsearchCommitteeRoster",
+	"requires": [],
+	"title": "Committee Roster",
+	"permission": "access CiviCRM",
+	"type": "search",
+	"icon": "fa-list-alt",
+	"server_route": "civicrm/committee/committee-roster"
+}

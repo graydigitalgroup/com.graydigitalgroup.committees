@@ -110,5 +110,13 @@ function committees_civicrm_navigationMenu(&$menu): void {
 		'operator' => 'OR',
 		'separator' => 0,
 	]);
+	_committees_civix_insert_navigation_menu( $menu, 'committees', [
+		'label' => E::ts('Committee Roster'),
+		'name' => 'committee_roster',
+		'url' => 'civicrm/committee/committee-roster',
+		'permission' => 'access CiviCRM',
+		'operator' => 'OR',
+		'separator' => 0,
+	]);
  	_committees_civix_navigationMenu($menu);
 }
