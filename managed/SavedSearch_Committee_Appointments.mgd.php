@@ -549,6 +549,7 @@ return [
             'table-striped',
           ],
         ],
+        "acl_bypass" => TRUE,
       ],
       'match' => [
         'saved_search_id',
