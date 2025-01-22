@@ -16,7 +16,8 @@ return [
           'version' => 4,
           'select' => [
             'id',
-            'contact_id.display_name',
+            'contact_id.first_name',
+            'contact_id.last_name',
             'CommitteeAppointment_Contact_contact_id_01_Contact_Email_contact_id_01.email',
             'CommitteeAppointment_Contact_contact_id_01_Contact_Membership_contact_id_01.membership_type_id:label',
             'committee_id.name',
@@ -109,9 +110,16 @@ return [
           'columns' => [
             [
               'type' => 'field',
-              'key' => 'contact_id.display_name',
+              'key' => 'contact_id.first_name',
               'dataType' => 'String',
-              'label' => E::ts('Name'),
+              'label' => E::ts('First Name'),
+              'sortable' => TRUE,
+            ],
+            [
+              'type' => 'field',
+              'key' => 'contact_id.last_name',
+              'dataType' => 'String',
+              'label' => E::ts('Last Name'),
               'sortable' => TRUE,
             ],
             [
