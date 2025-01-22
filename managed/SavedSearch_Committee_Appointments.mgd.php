@@ -18,7 +18,8 @@ return [
           'version' => 4,
           'select' => [
             'id',
-            'CommitteeAppointment_Contact_contact_id_01.display_name',
+            'CommitteeAppointment_Contact_contact_id_01.first_name',
+            'CommitteeAppointment_Contact_contact_id_01.last_name',
             'CommitteeAppointment_Committee_committee_id_01.name',
             'CommitteeAppointment_CommitteeRole_committee_role_id_01.name',
             'start_date',
@@ -26,6 +27,7 @@ return [
             'eligibility_end_date',
             'is_active',
             'CommitteeAppointment_Contact_contact_id_01_Contact_Membership_contact_id_01.status_id:label',
+            'CommitteeAppointment_Contact_contact_id_01.email_primary.email'
           ],
           'orderBy' => [],
           'where' => [],
@@ -129,9 +131,9 @@ return [
             ],
             [
               'type' => 'field',
-              'key' => 'CommitteeAppointment_Contact_contact_id_01.display_name',
+              'key' => 'CommitteeAppointment_Contact_contact_id_01.first_name',
               'dataType' => 'String',
-              'label' => E::ts('Contact Name'),
+              'label' => E::ts('First Name'),
               'sortable' => TRUE,
               'link' => [
                 'path' => '',
@@ -141,6 +143,28 @@ return [
                 'target' => '_blank',
               ],
               'title' => E::ts('View Contact'),
+            ],
+            [
+              'type' => 'field',
+              'key' => 'CommitteeAppointment_Contact_contact_id_01.last_name',
+              'dataType' => 'String',
+              'label' => E::ts('Last Name'),
+              'sortable' => TRUE,
+              'link' => [
+                'path' => '',
+                'entity' => 'Contact',
+                'action' => 'view',
+                'join' => 'CommitteeAppointment_Contact_contact_id_01',
+                'target' => '_blank',
+              ],
+              'title' => E::ts('View Contact'),
+            ],
+            [
+              'type' => 'field',
+              'key' => 'CommitteeAppointment_Contact_contact_id_01.email_primary.email',
+              'dataType' => 'String',
+              'label' => E::ts('Email'),
+              'sortable' => TRUE,
             ],
             [
               'type' => 'field',
@@ -424,7 +448,8 @@ return [
           'version' => 4,
           'select' => [
             'id',
-            'CommitteeAppointment_Contact_contact_id_01.display_name',
+            'CommitteeAppointment_Contact_contact_id_01.first_name',
+            'CommitteeAppointment_Contact_contact_id_01.last_name',
             'CommitteeAppointment_Committee_committee_id_01.name',
             'CommitteeAppointment_CommitteeRole_committee_role_id_01.name',
             'start_date',
@@ -443,11 +468,6 @@ return [
                 'committee_id',
                 '=',
                 'CommitteeAppointment_Committee_committee_id_01.id',
-              ],
-              [
-                'CommitteeAppointment_Committee_committee_id_01.is_active',
-                '=',
-                TRUE,
               ],
             ],
             [
@@ -471,11 +491,6 @@ return [
                 'committee_role_id',
                 '=',
                 'CommitteeAppointment_CommitteeRole_committee_role_id_01.id',
-              ],
-              [
-                'CommitteeAppointment_CommitteeRole_committee_role_id_01.is_active',
-                '=',
-                TRUE,
               ],
             ],
           ],
