@@ -117,6 +117,7 @@ return [
         'type' => 'table',
         'settings' => [
           'description' => NULL,
+          'headerCount' => true,
           'sort' => [],
           'limit' => 50,
           'pager' => [],
@@ -306,6 +307,7 @@ return [
         'type' => 'table',
         'settings' => [
           'description' => NULL,
+          'headerCount' => true,
           'sort' => [],
           'limit' => 50,
           'pager' => [],

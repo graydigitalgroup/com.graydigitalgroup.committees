@@ -55,6 +55,7 @@ return [
         'type' => 'table',
         'settings' => [
           'description' => null,
+          'headerCount' => true,
           'sort' => [],
           'limit' => 50,
           'pager' => [],
