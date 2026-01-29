@@ -70,7 +70,7 @@ return [
       'title' => E::ts('HL Community'),
       'sql_type' => 'varchar(255)',
       'input_type' => 'Text',
-      'required' => TRUE,
+      'required' => FALSE,
       'localizable' => TRUE,
       'description' => E::ts('Community name on HigherLogic.'),
       'usage' => [

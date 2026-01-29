@@ -77,13 +77,6 @@ return [
             ],
             [
               'type' => 'field',
-              'key' => 'hl_community',
-              'dataType' => 'String',
-              'label' => E::ts('HL Community'),
-              'sortable' => true,
-            ],
-            [
-              'type' => 'field',
               'key' => 'is_active',
               'dataType' => 'Boolean',
               'label' => E::ts('Committee Is Active'),
