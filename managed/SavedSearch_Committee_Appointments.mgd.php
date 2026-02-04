@@ -20,7 +20,7 @@ return [
             'id',
             'CommitteeAppointment_Contact_contact_id_01.first_name',
             'CommitteeAppointment_Contact_contact_id_01.last_name',
-            'CommitteeAppointment_Committee_committee_id_01.name',
+            'committee_id.name',
             'CommitteeAppointment_CommitteeRole_committee_role_id_01.name',
             'start_date',
             'end_date',
@@ -33,20 +33,6 @@ return [
           'where' => [],
           'groupBy' => [],
           'join' => [
-            [
-              'Committee AS CommitteeAppointment_Committee_committee_id_01',
-              'INNER',
-              [
-                'committee_id',
-                '=',
-                'CommitteeAppointment_Committee_committee_id_01.id',
-              ],
-              [
-                'CommitteeAppointment_Committee_committee_id_01.is_active',
-                '=',
-                TRUE,
-              ],
-            ],
             [
               'Contact AS CommitteeAppointment_Contact_contact_id_01',
               'INNER',
@@ -169,7 +155,7 @@ return [
             ],
             [
               'type' => 'field',
-              'key' => 'CommitteeAppointment_Committee_committee_id_01.name',
+              'key' => 'committee_id.name',
               'dataType' => 'String',
               'label' => E::ts('Committee'),
               'sortable' => TRUE,
@@ -315,7 +301,7 @@ return [
           'columns' => [
             [
               'type' => 'field',
-              'key' => 'CommitteeAppointment_Committee_committee_id_01.name',
+              'key' => 'committee_id.name',
               'dataType' => 'String',
               'label' => E::ts('Committee'),
               'sortable' => TRUE,
